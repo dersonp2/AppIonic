@@ -1,0 +1,14 @@
+
+<app-header titulo="Alerta"></app-header>
+
+<ion-content>
+    <ion-button color="success" expand="full" (click)="presentAlert()">Abrir Alerta</ion-button>
+
+    <ion-button expand="full" (click)="presentAlertPrompt()">Abrir input</ion-button>
+
+    <ion-text color="success">
+        <h5>{{nome}} <ion-badge color="sucess" *ngIf="nome">{{numero}}</ion-badge></h5>
+
+    </ion-text>
+
+</ion-content>

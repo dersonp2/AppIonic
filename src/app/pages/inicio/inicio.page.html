@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar color="success">
+        <ion-buttons slot="start">
+            <!--            <ion-button (click)="toogleMenu()">-->
+            <!--                <ion-icon slot="icon-only" name="menu"></ion-icon>-->
+            <!--            </ion-button>-->
+            <ion-menu-button menu="principal"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>DeCasa</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-item *ngFor="let item of componentes" detail [routerLink]="item.link">
+            <ion-icon [name]="item.icone" slot="start"></ion-icon>
+            <ion-label>{{item.nome}}</ion-label>
+        </ion-item>
+
+    </ion-list>
+
+</ion-content>

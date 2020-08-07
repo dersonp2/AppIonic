@@ -1,0 +1,27 @@
+<app-header titulo="Datas"></app-header>
+
+
+<ion-content>
+    <ion-datetime
+                  display-format="DD/MM/YYYY"
+                  display-timezone="utc"
+                  cancel-text="Cancelar"
+                  done-text="Confirmar"
+                  placeholder="Data"
+                  [(ngModel)]="dataAtual"
+    ></ion-datetime>
+
+
+    <ion-datetime
+            display-format="YYYY"
+            display-timezone="utc"
+            cancel-text="Cancelar"
+            done-text="Confirmar"
+            placeholder="Data"
+            min="2020"
+            max="2022"
+    >
+
+    </ion-datetime>
+
+</ion-content>
